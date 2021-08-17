@@ -35,7 +35,7 @@ def getEdu(driver):
     return edu
 
 def crawl(fileName):
-    driver = webdriver.Chrome('chromedriver.exe')
+    driver = webdriver.Chrome('./chromedriver')
     driver.get(base.urlLn)
 
     user = driver.find_element_by_id('username')

@@ -1,7 +1,7 @@
 from googlesearch import search 
 import pandas as pd
 
-user = 'fburdelliv@gmail.com'
+user = 'fburdell@gmail.com'
 pwd = 'frankeb4'
 urlLn = 'https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin'
 num_queries = 25
@@ -34,5 +34,3 @@ def get_query(df):
 
 queries = get_query(df)
 urls = get_urls(queries)
-
-print(urls)
