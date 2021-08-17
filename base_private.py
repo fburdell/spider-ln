@@ -14,7 +14,7 @@ def get_urls(queries):
 
     for q in queries:
 
-        qurls = search(query=q, tld='co.in', lang='en', stop=num_queries)
+        qurls = search(q, lang='en', num_results=num_queries)
 
         urls.append(qurls)
         
@@ -34,3 +34,5 @@ def get_query(df):
 
 queries = get_query(df)
 urls = get_urls(queries)
+
+print(urls)
